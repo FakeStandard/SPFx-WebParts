@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "define-list-model-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/defineListModel/DefineListModelWebPart.js",
+          "manifest": "./src/webparts/defineListModel/DefineListModelWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DefineListModelWebPartStrings": "lib/webparts/defineListModel/loc/{locale}.js"
+  }
+}
