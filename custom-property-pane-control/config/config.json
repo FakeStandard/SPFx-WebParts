@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "custom-property-pane-control-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/customPropertyPaneControl/CustomPropertyPaneControlWebPart.js",
+          "manifest": "./src/webparts/customPropertyPaneControl/CustomPropertyPaneControlWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CustomPropertyPaneControlWebPartStrings": "lib/webparts/customPropertyPaneControl/loc/{locale}.js"
+  }
+}
