@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cascading-dropdown-property-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cascadingDropdownProperty/CascadingDropdownPropertyWebPart.js",
+          "manifest": "./src/webparts/cascadingDropdownProperty/CascadingDropdownPropertyWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CascadingDropdownPropertyWebPartStrings": "lib/webparts/cascadingDropdownProperty/loc/{locale}.js"
+  }
+}
