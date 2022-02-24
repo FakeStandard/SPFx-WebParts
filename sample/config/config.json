@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pivot-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pivot/PivotWebPart.js",
+          "manifest": "./src/webparts/pivot/PivotWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PivotWebPartStrings": "lib/webparts/pivot/loc/{locale}.js"
+  }
+}
