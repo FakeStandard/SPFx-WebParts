@@ -47,7 +47,7 @@ export default class PivotSample extends React.Component<
         </Pivot>
         <hr />
         {/* Dynamic */}
-        <Pivot>
+        <Pivot linkSize="large">
           {ISampleItems.map((item: IPivotItem) => {
             return (
               <PivotItem headerText={item.text} key={item.key}>
