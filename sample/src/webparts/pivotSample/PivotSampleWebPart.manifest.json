@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "27930198-79f7-428f-85d4-0e020e368c0a",
-  "alias": "PivotWebPart",
+  "id": "be3229eb-29a7-4c18-9714-2e3a05b242af",
+  "alias": "PivotSampleWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -18,11 +18,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "Pivot" },
-    "description": { "default": "Pivot description" },
+    "title": { "default": "PivotSample" },
+    "description": { "default": "PivotSample description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Pivot"
+      "description": "PivotSample"
     }
   }]
 }

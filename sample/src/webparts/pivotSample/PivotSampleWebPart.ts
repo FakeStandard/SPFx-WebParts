@@ -7,19 +7,19 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'PivotWebPartStrings';
-import Pivot from './components/Pivot';
-import { IPivotProps } from './components/IPivotProps';
+import * as strings from 'PivotSampleWebPartStrings';
+import PivotSample from './components/PivotSample';
+import { IPivotSampleProps } from './components/IPivotSampleProps';
 
-export interface IPivotWebPartProps {
+export interface IPivotSampleWebPartProps {
   description: string;
 }
 
-export default class PivotWebPart extends BaseClientSideWebPart<IPivotWebPartProps> {
+export default class PivotSampleWebPart extends BaseClientSideWebPart<IPivotSampleWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IPivotProps> = React.createElement(
-      Pivot,
+    const element: React.ReactElement<IPivotSampleProps> = React.createElement(
+      PivotSample,
       {
         description: this.properties.description
       }
