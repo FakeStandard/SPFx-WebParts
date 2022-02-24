@@ -10,6 +10,18 @@ import {
   PivotItem,
 } from "@fluentui/react";
 
+export interface IPivotItem {
+  key: string;
+  text: string;
+}
+
+const ISampleItems: IPivotItem[] = [
+  { key: "0", text: "Dynamic Item #1" },
+  { key: "1", text: "Dynamic Item #2" },
+  { key: "2", text: "Dynamic Item #3" },
+  { key: "3", text: "Dynamic Item #4" },
+];
+
 const labelStyles: Partial<IStyleSet<ILabelStyles>> = {
   root: { marginTop: 10 },
 };
@@ -32,6 +44,19 @@ export default class PivotSample extends React.Component<
           <PivotItem headerText="Tab 3">
             <Label styles={labelStyles}>Pivot #3 content</Label>
           </PivotItem>
+        </Pivot>
+        <hr />
+        {/* Dynamic */}
+        <Pivot>
+          {ISampleItems.map((item: IPivotItem) => {
+            return (
+              <PivotItem headerText={item.text} key={item.key}>
+                <Label styles={labelStyles}>
+                  This is the {item.text} with key {item.key}
+                </Label>
+              </PivotItem>
+            );
+          })}
         </Pivot>
       </div>
     );
