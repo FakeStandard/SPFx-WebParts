@@ -9,6 +9,7 @@ import {
   Pivot,
   PivotItem,
 } from "@fluentui/react";
+import PivotComponent from "./PivotComponent";
 
 export interface IPivotItem {
   key: string;
@@ -46,6 +47,7 @@ export default class PivotSample extends React.Component<
           </PivotItem>
         </Pivot>
         <hr />
+
         {/* Dynamic */}
         <Pivot linkSize="large">
           {ISampleItems.map((item: IPivotItem) => {
@@ -58,6 +60,10 @@ export default class PivotSample extends React.Component<
             );
           })}
         </Pivot>
+        <hr />
+        
+        {/* Import Component*/}
+        <PivotComponent />
       </div>
     );
   }
