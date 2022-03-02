@@ -17,11 +17,20 @@
           "manifest": "./src/webparts/getCurrentUser/GetCurrentUserWebPart.manifest.json"
         }
       ]
+    },
+    "simple-list-operations-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/simpleListOperations/SimpleListOperationsWebPart.js",
+          "manifest": "./src/webparts/simpleListOperations/SimpleListOperationsWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "PivotSampleWebPartStrings": "lib/webparts/pivotSample/loc/{locale}.js",
-    "GetCurrentUserWebPartStrings": "lib/webparts/getCurrentUser/loc/{locale}.js"
+    "GetCurrentUserWebPartStrings": "lib/webparts/getCurrentUser/loc/{locale}.js",
+    "SimpleListOperationsWebPartStrings": "lib/webparts/simpleListOperations/loc/{locale}.js"
   }
 }
