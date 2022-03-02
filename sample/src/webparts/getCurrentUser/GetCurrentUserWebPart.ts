@@ -71,6 +71,18 @@ export default class GetCurrentUserWebPart extends BaseClientSideWebPart<IGetCur
     </div>`;
     this.getSPData();
     this.getSPGroup();
+    this.getCurrentUser();
+  }
+
+  private getCurrentUser(): void {
+    let name = this.context.pageContext.user.displayName;
+    let mail = this.context.pageContext.user.email;
+
+    console.log(name);
+
+    sp.site.rootWeb.ensureUser(mail).then((result) => {
+      console.log(result.data.Id);
+    });
   }
 
   protected get dataVersion(): Version {
