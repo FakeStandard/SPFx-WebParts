@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/pivotSample/PivotSampleWebPart.manifest.json"
         }
       ]
+    },
+    "get-current-user-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/getCurrentUser/GetCurrentUserWebPart.js",
+          "manifest": "./src/webparts/getCurrentUser/GetCurrentUserWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "PivotSampleWebPartStrings": "lib/webparts/pivotSample/loc/{locale}.js"
+    "PivotSampleWebPartStrings": "lib/webparts/pivotSample/loc/{locale}.js",
+    "GetCurrentUserWebPartStrings": "lib/webparts/getCurrentUser/loc/{locale}.js"
   }
 }
