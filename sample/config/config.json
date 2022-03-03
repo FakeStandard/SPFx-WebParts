@@ -25,12 +25,22 @@
           "manifest": "./src/webparts/simpleListOperations/SimpleListOperationsWebPart.manifest.json"
         }
       ]
+    },
+    "react-crud-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactCrud/ReactCrudWebPart.js",
+          "manifest": "./src/webparts/reactCrud/ReactCrudWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "PivotSampleWebPartStrings": "lib/webparts/pivotSample/loc/{locale}.js",
     "GetCurrentUserWebPartStrings": "lib/webparts/getCurrentUser/loc/{locale}.js",
-    "SimpleListOperationsWebPartStrings": "lib/webparts/simpleListOperations/loc/{locale}.js"
+    "SimpleListOperationsWebPartStrings": "lib/webparts/simpleListOperations/loc/{locale}.js",
+    "ReactCrudWebPartStrings": "lib/webparts/reactCrud/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
   }
 }
