@@ -33,6 +33,14 @@
           "manifest": "./src/webparts/reactCrud/ReactCrudWebPart.manifest.json"
         }
       ]
+    },
+    "handling-checkbox-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/handlingCheckbox/HandlingCheckboxWebPart.js",
+          "manifest": "./src/webparts/handlingCheckbox/HandlingCheckboxWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -41,6 +49,7 @@
     "GetCurrentUserWebPartStrings": "lib/webparts/getCurrentUser/loc/{locale}.js",
     "SimpleListOperationsWebPartStrings": "lib/webparts/simpleListOperations/loc/{locale}.js",
     "ReactCrudWebPartStrings": "lib/webparts/reactCrud/loc/{locale}.js",
-    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "HandlingCheckboxWebPartStrings": "lib/webparts/handlingCheckbox/loc/{locale}.js"
   }
 }
