@@ -41,6 +41,14 @@
           "manifest": "./src/webparts/handlingCheckbox/HandlingCheckboxWebPart.manifest.json"
         }
       ]
+    },
+    "icon-sample-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/iconSample/IconSampleWebPart.js",
+          "manifest": "./src/webparts/iconSample/IconSampleWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -50,6 +58,7 @@
     "SimpleListOperationsWebPartStrings": "lib/webparts/simpleListOperations/loc/{locale}.js",
     "ReactCrudWebPartStrings": "lib/webparts/reactCrud/loc/{locale}.js",
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
-    "HandlingCheckboxWebPartStrings": "lib/webparts/handlingCheckbox/loc/{locale}.js"
+    "HandlingCheckboxWebPartStrings": "lib/webparts/handlingCheckbox/loc/{locale}.js",
+    "IconSampleWebPartStrings": "lib/webparts/iconSample/loc/{locale}.js"
   }
 }

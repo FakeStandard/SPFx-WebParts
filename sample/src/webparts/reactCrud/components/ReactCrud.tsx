@@ -93,9 +93,24 @@ export default class ReactCrud extends React.Component<
     };
   }
 
-  public async componentDidMount() {
-    await this.fetchData();
+  public componentWillMount(): void {
+    console.log("componentWillMount");
+    // before component
   }
+
+  public componentDidMount = async () => {
+    console.log("componentDidMount");
+    await this.fetchData();
+    // after component
+  };
+
+  public componentDidUpdate(prevProps, prevStates): void {
+    // when component change
+    console.log("componentDidUpdate");
+  }
+
+  // public async componentDidMount() {
+  // }
 
   public async fetchData() {
     let web = Web(this.props.webURL);

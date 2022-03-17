@@ -61,7 +61,7 @@ export default class PivotSample extends React.Component<
           })}
         </Pivot>
         <hr />
-        
+
         {/* Import Component*/}
         <PivotComponent />
       </div>

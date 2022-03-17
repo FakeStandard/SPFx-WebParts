@@ -34,6 +34,7 @@ export default class SimpleListOperations extends React.Component<
 > {
   public constructor(prop: ISimpleListOperationsProps) {
     super(prop);
+    console.log("constructor");
     this.state = {
       addText: "",
       updateText: [],
@@ -46,7 +47,38 @@ export default class SimpleListOperations extends React.Component<
     }
   }
 
+  public componentWillUnmount(): void {
+    console.log("componentWillUnmount");
+  }
+
+  public componentDidMount(): void {
+    console.log("componentDidMount");
+  }
+
+  public componentDidUpdate(
+    prevProps: Readonly<ISimpleListOperationsProps>,
+    prevState: Readonly<ISimpleListOperationsStates>,
+    snapshot?: any
+  ): void {
+    console.log("componentDidUpdate");
+  }
+
+  public componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
+    console.log("componentDidCatch");
+  }
+
+  public shouldComponentUpdate(
+    nextProps: Readonly<ISimpleListOperationsProps>,
+    nextState: Readonly<ISimpleListOperationsStates>,
+    nextContext: any
+  ): boolean {
+    console.log("shouldComponentUpdate");
+    return true;
+  }
+
   public render(): React.ReactElement<ISimpleListOperationsProps> {
+    console.log("render");
+    console.log(this.state.updateText);
     return (
       <div className={styles.simpleListOperations}>
         <div className={styles.container}>
@@ -104,6 +136,7 @@ export default class SimpleListOperations extends React.Component<
   }
 
   async _getListItems() {
+    console.log("_getListItems");
     const allItems: any[] = await sp.web.lists
       .getByTitle("Colors")
       .items.getAll();
