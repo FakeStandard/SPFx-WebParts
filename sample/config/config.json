@@ -50,14 +50,6 @@
         }
       ]
     },
-    "file-upload-sample-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/fileUploadSample/FileUploadSampleWebPart.js",
-          "manifest": "./src/webparts/fileUploadSample/FileUploadSampleWebPart.manifest.json"
-        }
-      ]
-    },
     "sp-fx-crud-web-part": {
       "components": [
         {
@@ -76,7 +68,6 @@
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
     "HandlingCheckboxWebPartStrings": "lib/webparts/handlingCheckbox/loc/{locale}.js",
     "IconSampleWebPartStrings": "lib/webparts/iconSample/loc/{locale}.js",
-    "FileUploadSampleWebPartStrings": "lib/webparts/fileUploadSample/loc/{locale}.js",
     "SpFxCrudWebPartStrings": "lib/webparts/spFxCrud/loc/{locale}.js"
   }
 }
