@@ -57,6 +57,14 @@
           "manifest": "./src/webparts/spFxCrud/SpFxCrudWebPart.manifest.json"
         }
       ]
+    },
+    "excelwork-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/excelwork/ExcelworkWebPart.js",
+          "manifest": "./src/webparts/excelwork/ExcelworkWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -68,6 +76,7 @@
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
     "HandlingCheckboxWebPartStrings": "lib/webparts/handlingCheckbox/loc/{locale}.js",
     "IconSampleWebPartStrings": "lib/webparts/iconSample/loc/{locale}.js",
-    "SpFxCrudWebPartStrings": "lib/webparts/spFxCrud/loc/{locale}.js"
+    "SpFxCrudWebPartStrings": "lib/webparts/spFxCrud/loc/{locale}.js",
+    "ExcelworkWebPartStrings": "lib/webparts/excelwork/loc/{locale}.js"
   }
 }
