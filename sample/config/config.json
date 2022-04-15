@@ -65,6 +65,14 @@
           "manifest": "./src/webparts/excelwork/ExcelworkWebPart.manifest.json"
         }
       ]
+    },
+    "temperature-conversion-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/temperatureConversion/TemperatureConversionWebPart.js",
+          "manifest": "./src/webparts/temperatureConversion/TemperatureConversionWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -77,6 +85,7 @@
     "HandlingCheckboxWebPartStrings": "lib/webparts/handlingCheckbox/loc/{locale}.js",
     "IconSampleWebPartStrings": "lib/webparts/iconSample/loc/{locale}.js",
     "SpFxCrudWebPartStrings": "lib/webparts/spFxCrud/loc/{locale}.js",
-    "ExcelworkWebPartStrings": "lib/webparts/excelwork/loc/{locale}.js"
+    "ExcelworkWebPartStrings": "lib/webparts/excelwork/loc/{locale}.js",
+    "TemperatureConversionWebPartStrings": "lib/webparts/temperatureConversion/loc/{locale}.js"
   }
 }
